@@ -1,0 +1,115 @@
+body{
+	margin: 0;
+	/*background-color: #E2E2E2;*/
+}
+#top_bar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	/*background-color: red;*/
+}
+#close_button{
+	position: absolute;
+	bottom: 4px;
+	height: 50px;
+	width: 60px;
+	/*background-color: blue;*/
+	font-size: 28px;
+	line-height: 50px;
+	text-align: center;
+}
+#registered{
+	position: absolute;
+	height: 50px;
+	width: 60px;
+	bottom: 0;
+	right: 0;
+	line-height: 50px;
+	font-size: 18px;
+	text-shadow: 0 0 0.5px;
+	/*background-color: green;*/
+}
+#banner_img{
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 80px;
+	/*background-color: red;*/
+}
+#input_s{
+	position: absolute;
+	top: 252px;
+	width: 100%;
+	height: 240px;
+	/*background-color: red;*/
+}
+.input_cls{
+	letter-spacing:2px;
+	width: 80%;
+	height: 35px;
+	margin: 25px 10% 0;
+	border-style: none none solid none;
+	border-width: 0.5px;
+	border-color: #D8D8D8;
+	font-size: 16px;
+}
+input{
+	outline:none;
+}
+#cls_input{
+	right: 12%;
+	top: 36px;
+	position: absolute;
+	height: 16px;
+	width: 16px;
+
+	/*background-color: red;*/
+	background-image: url(../close.png);
+	background-size: 100%;
+}
+#forget_password{
+	position: absolute;
+	bottom: 36%;
+	right: 10%;
+	color: #AFAFAF;
+	font-size: 14px;
+}
+#login_up{
+	width: 80%;
+	height: 50px;
+	background-color: #ffda17;
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50px;
+	font-size: 20px;
+	color: #333333;
+	text-shadow: 0 0 0.25px;
+}
+#bottom_bar{
+	width: 320px;
+	position: absolute;
+	height: 80px;
+	/*background-color: red;*/
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 30px;
+}
+.icon_img{
+	float: left;
+	width: 15%;
+	margin: 0 28px 0;
+}
+#outer_login{
+	position: absolute;
+	top:-30px;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	color: #C4C4C4;
+}

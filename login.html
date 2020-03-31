@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div id="top_bar">
+		<div onclick="mui.back();plus.navigator.setStatusBarStyle('lite');" id="close_button">
+			<img width="18px" src="close.png">
+		</div>
+		<div onclick="open_registered()" id="registered">注册</div>
+	</div>
+	<img id="banner_img" src="nm.png">
+	<div id="input_s">
+		<div onclick="cls_num()" id="cls_input"></div>
+		<input id="input_phone" class="input_cls" onkeyup="this.value=this.value.replace(/\D/g,'')" oninput="if(value.length>5)value=value.slice(0,11);login_phone_num(this.value)" type="number" name="user_id" placeholder="输入手机号">
+		<input id="input_psw" class="input_cls" type="password" name="user_psw" placeholder="密码">
+		<div id="forget_password">忘记密码?</div>
+		<div onclick="login_up()" id="login_up">登录</div>
+	</div>
+	<div id="bottom_bar">
+		<div id="outer_login">其他方式</div>
+		<div class="icon_img"><img width="100%" src="wb.png"></div>
+		<div class="icon_img"><img width="100%" src="wx.png"></div>
+		<div class="icon_img"><img width="100%" src="qq.png"></div>
+	</div>
+</body>
+</html>

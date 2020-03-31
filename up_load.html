@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/up_load.css">
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/up_load.js"></script>
+</head>
+<body>
+
+
+	<div id="top_bar"> <div id="delete_sss" onclick="delete_s()">删除云端视频</div></div>
+	<div id="up_load_num">请选择上传视频</div>
+	<div id="select_video">
+		<div id="progress_bar"></div>
+		<video loop id="play_video"></video>
+		<div id="input_box_matte">点击选择视频</div>
+		<input type="file" id="setect_video_input" accept="video/mp4" name="setect_video_input"/>
+	</div>
+	<div id="mood_selection">
+		<div id="mood_select">发布心情:</div>
+		<select id="mood_selection_2">
+		  <option value ="安然的度一世春秋浑噩自知">安然度过一世春秋,浑噩自知</option>
+		  <option value ="塞北黄沙送我无尽风华叹">塞北黄沙，送我无尽风华叹</option>
+		  <option value="一切只是幻影稍纵即逝">一切只是幻影，稍纵即逝</option>
+		  <option value="为生命中最深的爱恋终散作云烟">为生命中最深的爱恋，终散作云烟</option>
+		</select>
+	</div>
+	<div id="video_description">
+		<div id="video_ss">视频描述:</div>
+		<textarea id="enter_multiple_lines_text"></textarea>
+	</div>
+	<div id="up_bottom" onclick="send_up()">发布</div>
+</body>
+</html>

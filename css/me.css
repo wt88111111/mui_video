@@ -1,0 +1,430 @@
+body{
+	margin: 0;
+}
+#page_4{
+	position: absolute;
+	top: 0px;
+	/*left: 300%;*/
+	height: 100%;
+	width: 100%;
+	/*background-color: blue;*/
+	overflow-x: hidden;
+	background-color: #fff;
+}
+#fix_top{
+	z-index: 998;
+	position: fixed;
+	height: 30px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+#title_show{
+	position: relative;
+	height: 220px;
+	width: 100%;
+	background-color: #fff;
+	border-style: none none solid none;
+	border-color: #CECECE;
+	border-width: 0.5px;
+}
+#profile_picture{
+	overflow: hidden;
+	float: left;
+	margin: -40px 15px 0;
+	border-radius: 150px;
+	height: 80px;
+	width: 80px;
+	background-color: #D6D6D6;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #fff;
+}
+#details{
+	
+	min-height: 30%;
+	width: 300%;
+	position: relative;
+	transition:300ms;
+	transform:translate3d(0%,0,0);
+	/*/*background-color: #F7F7F7;*/*/
+	/*background-color: red;*/
+	
+}
+#user_id{
+	float: left;
+	margin: 6px 0 0;
+	width: 30%;
+	height: 20px;
+	color: #404040;
+}
+#social{
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	/*background-color: red;*/
+/*	margin: 15px 0 0;
+	float: left;*/
+	position: absolute;
+	bottom: 4px;
+	/*border-style: none none solid none;*/
+	border-color: #CECECE;
+	border-width: 0.5px;
+
+}
+#attention{
+	float: left;
+	height: 100%;
+	width: 33.3%;
+	/*background-color: blue;*/
+}
+#fan{
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 50%;
+	/*border-style: none solid none solid;*/
+	border-width: 0.5px;
+	/*background-color: blue;*/
+}
+#dynamic{
+	float: left;
+	height: 100%;
+	width: 50%;
+	/*background-color: blue;*/
+}
+.p1{
+	line-height:15px;
+}
+.p2{
+	padding: 18px 0 0 ;
+	line-height:0px;
+}
+#railing{
+	position: absolute;
+	top: 28%;
+	/*z-index: 0;*/
+	width: 100%;
+	height: 50%;
+	border-style: none solid none solid;
+	border-width: 0.5px;
+	border-color: #C1C1C1;
+	pointer-events:none;
+	/*background-color: red;*/
+}
+#title_img{
+	text-align: center;
+	line-height: 200px;
+	font-size: 50px;
+	color: #C0C0C0;
+	height: 200px;
+	width: 100%;
+	background-color: #EDEDED;
+	background-image: url(../back_wallpaper.png);
+}
+#message_board{
+	position: absolute;
+	top: 70px;
+	height: 85px;
+	width: 100%;
+	overflow: hidden;
+	/*background-color: red;*/
+}
+#message_board p{
+	padding: 20px 20px 0;
+}
+#registration_date{
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	height: 20px;
+	width: 100%;
+	/*background-color: red;*/
+	color: #B2B2B2;
+	font-size: 30px;
+	/*padding: 0 40px 0;*/
+}
+#dynamic_detailed{
+	left: 0%;
+	display: inline;
+	overflow:hidden;
+	min-height: 100%;
+	width: 33.333%;
+	position: absolute;
+	/*background-color: #F2F2F2;*/
+}
+#fan_detailed{
+	left: 33.333%;
+	display: inline;
+	overflow:hidden;
+	min-height: 100%;
+	width: 33.333%;
+	position: absolute;
+	/*background-color: red;*/
+}
+#attention_detailed{
+	left: 66.666%;
+	display: inline;
+	overflow:hidden;
+	height: 100%;
+	width: 33.333%;
+	position: absolute;
+	/*background-color: yellow;*/
+}
+#check_indicator{
+	height: 2px;
+	width: 50%;
+	background-color: #ffdb14;
+	position: absolute;
+	bottom: -4px;
+	transition:300ms;
+	transform:translate3d(0%,0,0);
+}
+#edit_information{
+	position: absolute;
+	height: 30px;
+	width: 120px;
+	/*background-color: red;*/
+	right: 10px;
+	top: 4px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 30px;
+	border-style: solid;
+	border-width: 1px;
+	color: #ffdb14;
+	border-color: #ffdb14;
+}
+.dynamic_cls{
+	float: left;
+	min-height: 80px;
+	width: 100%;
+
+	/*border-style:none none solid none;*/
+	border-width: 0.5px;
+	border-color: #CCCCCC;
+	background-color: #ffffff;
+	margin-bottom: 10px;
+}
+.user_msg{
+	float: left;
+	height: 50px;
+	width: 100%;
+	/*background-color: red;*/
+}
+.dynamic_img{
+	float: left;
+	margin: 7px 7px 7px;
+	margin-left: 20px;
+	height: 40px;
+	width: 40px;
+	background-color: #D8D8D8;
+	border-radius: 50px;
+	overflow: hidden;
+}
+.dynamic_id{
+	margin-bottom:0;
+	padding: 6px 0 0;
+	color:black;
+	font-size: 14px;
+}
+.dynamic_title{
+	font-size: 12px;
+	color: #C1C1C1;
+	padding: -10px 0 0;
+	float: left;
+	margin-left: 4px;
+}
+.dynamic_time{
+	font-size: 12px;
+	color: #C1C1C1;
+	float: left;
+}
+.content{
+	float: left;
+	margin-top: 12px;
+	min-height: 50px;
+	width: 100%;
+	/*background-color: rgba(20,20,20,0.1);*/
+	padding: 0 20px 0;
+}
+.details_botton{
+	float: left;
+	height: 55px;
+	width: 100%;
+}
+.on_but{
+	color: #C1C1C1;
+	float: right;
+	margin:-20px 10px 0;
+}
+.details_clas{
+	position: relative;
+	font-size: 22px;
+	height: 100%;
+	width: 100%;
+	color: #9E9E9E;
+	text-align: center;
+}
+.mesg_num{
+	font-size: 16px;
+}
+.like_num{
+	font-size: 16px;
+}
+.like{
+	margin-top: 20px;
+	height: 50%;
+	width: 50%;
+	text-align: center;
+	float: left;
+}
+.message{
+	margin-top: 20px;
+	height: 50%;
+	width: 50%;
+	text-align: center;
+	float: left;
+}
+.fan_box{
+	margin-top: -0.5px;
+	position: relative;
+	float: left;
+	height: 80px;
+	width: 100%;
+	background-color: #fff;
+	border-style: solid none none none;
+	border-width: 0.5px;
+	border-color: #B2B2B2;
+}
+.fan_user_photo{
+	float: left;
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
+	background-color: #D8D8D8;
+	margin:10px 10px 0; 
+}
+.fan_user_name{
+	font-size: 10px;
+	position: absolute;
+	color: black;
+	font-size: 14px;
+	top: 16px;
+	left: 80px;
+}
+.fan_fan_num{
+	font-size: 10px;
+	float: left;
+	margin-top: 34px;
+}
+.fan_live_num{
+	font-size: 10px;
+	float: left;
+	margin-top: 34px;
+	margin-left: 10px;
+}
+.fen_last_time{
+	font-size: 10px;
+	float: left;
+	margin-top: 34px;
+	margin-left: 10px;
+}
+
+
+.atten_box{
+	margin-top: -0.5px;
+	position: relative;
+	float: left;
+	height: 80px;
+	width: 100%;
+	background-color: #fff;
+	border-style: solid none none none;
+	border-width: 0.5px;
+	border-color: #B2B2B2;
+}
+.atten_user_photo{
+	float: left;
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
+	background-color: #D8D8D8;
+	margin:10px 10px 0; 
+}
+.atten_user_name{
+	font-size: 10px;
+	position: absolute;
+	color: black;
+	font-size: 14px;
+	top: 16px;
+	left: 80px;
+}
+.atten_fan_num{
+	font-size: 10px;
+	float: left;
+	margin-top: 34px;
+}
+.atten_live_num{
+	font-size: 10px;
+	float: left;
+	margin-top: 34px;
+	margin-left: 10px;
+}
+.atten_last_time{
+	font-size: 10px;
+	float: left;
+	margin-top: 34px;
+	margin-left: 10px;
+}
+#no_login{
+	display: inline;
+	z-index: 999;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(127, 201, 255, 1);
+}
+#description{
+	position: absolute;
+	height: 30px;
+	width: 220px;
+	/*background-color: red;*/
+	bottom: 50px;
+	font-size: 18px;
+	line-height: 30px;
+}
+.video_box{
+	position: relative;
+	float: left;
+	width: 33.33333%;
+	height: 160px;
+	/*background-color: red;*/
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: black;
+}
+.like{
+	height: 20px;
+	width: 100%;
+	text-align: left;
+	/*background-color: blue;*/
+	position: absolute;
+	bottom: 10px;
+	float: left;
+	color:#fff;
+}
+#exit_login{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	height: 30px;
+	width: 100px;
+	background-color: #ffdb14;
+	border-radius: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+}

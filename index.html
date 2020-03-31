@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+	<script type="text/javascript" src="js/mui.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/fullpage.js"></script>
+<!-- <script type="text/javascript" src="js/html_to_js.js"></script> -->
+
+
+</head>
+<body>
+<script type="text/javascript">
+	mui.plusReady(function(){
+	mui.init({
+	  preloadPages:[
+	    {
+	      url:"login.html",
+	      id:"login"
+	    },
+	    {
+	      url:"registered.html",
+	      id:"registered"
+	    },
+	    {
+	    	url:"up_load.html",
+	    	id:"up_load"
+	    },
+	    {
+	    	url:'im.html',
+	    	id:'im'
+	    }
+	  ]
+	});
+})
+</script>
+
+<div id="fullpage">
+	<!-- <div class="section active" id="section0"><h1>fullPage.js</h1></div> -->
+	<div class="section" id="section1">
+		<div onclick="pause_video_s()" class="back_vid" id="v_1">
+			<div class="video_status"></div>
+			<div class="control_layer"> 
+				<div class="switch_video_source"> 
+					<span onclick="window.event.cancelBubble=true;switch_video_stream('recommend')" class="recommend">推荐</span> 
+					<span>&nbsp|&nbsp</span> 
+					<span onclick="window.event.cancelBubble=true;switch_video_stream('like')" class="like">关注</span> 
+				</div> 
+				<div class="menu"> 
+					<span onclick="window.event.cancelBubble=true;open_menu()" class="iconfont icon-caidan"></span> 
+				</div> 
+				<div class="user_block"> 
+					<div class="user_name">用户名</div>
+					<div class="video_description">视频简介</div> 
+				</div> 
+				<div class="video_parameter"> 
+					<div onclick="open_user('err01')" class="user_avatar"> 
+						<div class="add_user"> 
+							<span class="iconfont icon-iconjia"></span> 
+						</div> 
+						<img class="user_avatar_img"  width="100%" height="100%" src="1.png">
+					</div> 
+					<div onclick="click_like('video_id')" class="like_button"> 
+						<span class="iconfont icon-aixin"></span> 
+						<div class="like_num">喜欢数量</div> 
+					</div> 
+					<div onclick="open_comment('viedo_id')" class="comment"> 
+						<span class="iconfont icon-pinglun"></span> 
+						<div class="comment_num">留言数量</div> 
+					</div> 
+					<div onclick="goto_forward('')" class="forward"> 
+						<span class="iconfont icon-forward"></span> 
+						<div class="forward_num">转发数量</div> 
+					</div> 
+				</div> 
+				<div class="comment_input"> 
+					<div onclick="send_barrage('')" class="barrage_input">发点什么...</div> 
+					<div class="expression"> 
+						<span class="iconfont icon-xiaolian"></span> 
+					</div> 
+					<div onclick="switch_barrage('video_id')" class="dan">弹</div> 
+				</div> 
+			</div> 
+			<div class="back_glass_img"></div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+<div class="back_vid" onclick="pause_video_s()" id="v_2">
+	<div class="video_status"></div>
+			<div class="control_layer"> 
+				<div class="switch_video_source"> 
+					<span onclick="switch_video_stream('recommend')" class="recommend">推荐</span> 
+					<span>&nbsp|&nbsp</span> 
+					<span onclick="switch_video_stream('like')" class="like">关注</span> 
+				</div> 
+				<div class="menu"> 
+					<span onclick="window.event.cancelBubble=true;open_menu()" class="iconfont icon-caidan"></span> 
+				</div> 
+				<div class="user_block"> 
+					<div class="user_name">用户名</div> 
+					<div class="video_description">视频简介</div> 
+				</div> 
+				<div class="video_parameter"> 
+					<div onclick="open_user('user_id')" class="user_avatar"> 
+						<div class="add_user"> 
+							<span class="iconfont icon-iconjia"></span> 
+						</div> 
+						<img class="user_avatar_img"  width="100%" height="100%" src="1.png">
+					</div> 
+					<div onclick="click_like('video_id')" class="like_button"> 
+						<span class="iconfont icon-aixin"></span> 
+						<div class="like_num">喜欢数量</div> 
+					</div> 
+					<div onclick="open_comment('viedo_id')" class="comment"> 
+						<span class="iconfont icon-pinglun"></span> 
+						<div class="comment_num">留言数量</div> 
+					</div> 
+					<div onclick="goto_forward('')" class="forward"> 
+						<span class="iconfont icon-forward"></span> 
+						<div class="forward_num">转发数量</div> 
+					</div> 
+				</div> 
+				<div class="comment_input"> 
+					<div onclick="send_barrage('video_id')" class="barrage_input">发点什么...</div> 
+					<div class="expression"> 
+						<span class="iconfont icon-xiaolian"></span> 
+					</div> 
+					<div onclick="switch_barrage('video_id')" class="dan">弹</div> 
+				</div> 
+			</div> 
+			<div class="back_glass_img"></div>
+		</div>
+	</div>
+	<div class="section" id="section3">
+<div class="back_vid" onclick="pause_video_s()" id="v_3"> 
+	<div class="video_status"></div>
+			<div class="control_layer"> 
+				<div class="switch_video_source"> 
+					<span onclick="switch_video_stream('recommend')" class="recommend">推荐</span> 
+					<span>&nbsp|&nbsp</span> 
+					<span onclick="switch_video_stream('like')" class="like">关注</span> 
+				</div> 
+				<div class="menu"> 
+					<span onclick="window.event.cancelBubble=true;open_menu()" class="iconfont icon-caidan"></span> 
+				</div> 
+				<div class="user_block"> 
+					<div class="user_name">用户名</div> 
+					<div class="video_description">视频简介</div> 
+				</div> 
+				<div class="video_parameter"> 
+					<div onclick="open_user('user_id')" class="user_avatar"> 
+						<div class="add_user"> 
+							<span class="iconfont icon-iconjia"></span> 
+						</div> 
+						<img class="user_avatar_img"  width="100%" height="100%" src="1.png">
+					</div> 
+					<div onclick="click_like('video_id')" class="like_button"> 
+						<span class="iconfont icon-aixin"></span> 
+						<div class="like_num">喜欢数量</div> 
+					</div> 
+					<div onclick="open_comment('viedo_id')" class="comment"> 
+						<span class="iconfont icon-pinglun"></span> 
+						<div class="comment_num">留言数量</div> 
+					</div> 
+					<div onclick="goto_forward('')" class="forward"> 
+						<span class="iconfont icon-forward"></span> 
+						<div class="forward_num">转发数量</div> 
+					</div> 
+				</div> 
+				<div class="comment_input"> 
+					<div onclick="send_barrage('')" class="barrage_input">发点什么...</div> 
+					<div class="expression"> 
+						<span class="iconfont icon-xiaolian"></span> 
+					</div> 
+					<div onclick="switch_barrage('video_id')" class="dan">弹</div> 
+				</div> 
+			</div> 
+			<div class="back_glass_img"></div>
+		</div>
+	</div>
+</div>
+
+<div onclick="close_comment()" id="flow_comment">
+	<div  onclick="event.stopPropagation()" id="bottom_comment">
+		<div id="comment_list">
+			<div id="scroll_comment">
+				
+			</div>
+		</div>
+		<input maxlength="15" id="input_comment" type="text" name="input_comment">
+		<div  onclick="event.stopPropagation();send_comment()" id="send_comment">发送</div>
+	</div>
+</div>
+<div id="flow_menu" onclick="close_menu()">
+	<div id="horizontal_row">
+		<span onclick="window.event.cancelBubble=true;open_home()" class="home iconfont icon-zhuye"></span>
+		<span onclick="window.event.cancelBubble=true;open_find()" class="find iconfont icon-find"></span>
+		<div id="upload_ball" onclick="window.event.cancelBubble=true;open_upload()"><span class="iconfont icon-iconjia"></span></div>
+		<span onclick="window.event.cancelBubble=true;open_my()" class="my iconfont icon-wode"></span>
+		<span onclick="window.event.cancelBubble=true;open_message()" class="message iconfont icon-xiaoxi"></span>
+	</div>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

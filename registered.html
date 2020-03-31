@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/registered.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/registered.css">
+</head>
+<body>
+	<div onclick="refish()" id="back_up"></div>
+	<div id="scrol">
+		<div class="scr" id="s_1">
+			<div class="title_s">使用手机号码注册</div>
+			<input id="input_phone_num" type="number" name="phone_num" placeholder="" onkeyup="this.value=this.value.replace(/\D/g,'');padd_num(this.value)" oninput="if(value.length>5)value=value.slice(0,11)">
+			<div id="shwo_button">
+				<img id="yzm" src="http://39.106.92.181:8080/duanshiping/user?method=generate">
+			</div>
+			<input placeholder="验证码" id="verification_code" onkeyup="this.value=this.value.replace(/\D/g,'');verification_check(this.value)" oninput="if(value.length>5)value=value.slice(0,5)" type="number" maxlength="5" name="verification_code">
+		</div>
+		<div class="scr" id="s_2">
+			<div class="title_s">输入手机验证码</div>
+			<input id="input_phone_verification_code" type="number" name="phone_num" placeholder="" oninput="if(value.length>5)value=value.slice(0,5);" onkeyup="this.value=this.value.replace(/\D/g,'');check(this.value)" >
+		</div>
+		<div class="scr" id="s_3">
+			<div class="title_s">完成详细信息</div>
+			<input placeholder="用户名" oninput="reset_user_name(this.value)" id="input_name" type="text" name="user_name">
+			<input oninput="reset_user_password(this.value)" placeholder="密码" id="input_psw" type="password" name="psw">
+			<input oninput="reset_user_email(this.value)" placeholder="邮箱" id="input_email" type="text" name="email">
+			<div onclick="toload()" class="registered_ok">
+				完成
+			</div>
+		</div>
+	</div>
+</body>
+</html>
